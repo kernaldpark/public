@@ -1,0 +1,7 @@
+1. 기존 확장 프로그램 목록 백업
+# VS Code 터미널에서 아래 코드 입력
+> code --list-extensions > extensions.txt
+ 
+2. 새로운 컴퓨터에서 백업된 목록 적용
+# 새로운 컴퓨터 VS Code 터미널에서 아래 코드 입력
+> cat extensions.txt |% { code --install-extension $_}
